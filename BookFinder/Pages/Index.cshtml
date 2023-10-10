@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4 criteria">Acceptence Criteria</h1><br />
+    <span class="criteria">Books written by 'Silver Couple'</span><br /><span>@Model.Criteria1Text</span><br /><br />
+    <span class="criteria">Authors who wrote 'City Crime':</span><br /><span>@Model.Criteria2Text</span><br /><br />
+    <span class="criteria">Authors who have not written any books</span><br /><span>@Model.Criteria3Text</span><br /><br />
+    <span class="criteria">How many books has been writen by 'Silver Couple'</span><br /><span>@Model.Criteria4Text</span><br /><br />
+    <span class="criteria">All the books which is more than $100</span><br /><span>@Model.Criteria5Text</span><br /><br />
+</div>
+
+<style>
+    .criteria {
+        font-weight: bold;
+    }
+</style>
